@@ -1,0 +1,15 @@
+### POST
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "dateOfBirth": "2020-01-01",
+    "gender": "MALE",
+    "startDate": "2021-09-01",
+    "position": "Full Stack SW Engineer",
+    "monthlySalary": 6000.0,
+    "area": "Business and Projects"
+}
+

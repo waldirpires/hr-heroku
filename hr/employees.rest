@@ -1,0 +1,57 @@
+### GET
+GET http://localhost:8080/employees
+
+### GET
+GET http://localhost:8080/employees/1234
+
+### POST
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "dateOfBirth": "2001-02-03",
+    "gender": "MALE",
+    "startDate": "2021-09-01",
+    "position": "Full Stack SW Engineer",
+    "monthlySalary": "3500",
+    "area": "IT projects"
+}
+
+### GET
+GET http://localhost:8080/employees/614912fdd6f4a17e614d5fa5
+
+
+### PUT
+PUT http://localhost:8080/employees/614912fdd6f4a17e614d5fa5
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe Jr",
+    "dateOfBirth": "2001-01-01",
+    "gender": "MALE",
+    "startDate": "2021-08-01",
+    "position": "Senior Full Stack SW Engineer",
+    "monthlySalary": "5500",
+    "area": "Business projects"
+}
+
+### PUT - NOT FOUND
+PUT http://localhost:8080/employees/614910671e38003a5681488g
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe Jr",
+    "dateOfBirth": "2001-01-01",
+    "gender": "MALE",
+    "startDate": "2021-08-01",
+    "position": "Senior Full Stack SW Engineer",
+    "monthlySalary": "5500",
+    "area": "Business projects"
+}
+
+### DELETE
+DELETE http://localhost:8080/employees/614912fdd6f4a17e614d5fa5

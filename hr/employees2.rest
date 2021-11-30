@@ -1,0 +1,23 @@
+GET http://localhost:8080/v1/employees
+
+
+###
+POST http://localhost:8080/v1/employees
+Content-Type: application/json
+
+{
+    "firstName": "Mary",
+    "lastName": "Jane",
+    "dateOfBirth": "2011-01-05",
+    "gender": "FEMALE",
+    "startDate": "2021-11-16",
+    "position": "QA Engineer",
+    "monthlySalary": "4500",
+    "area": "Products"
+}
+
+###
+GET http://localhost:8080/v1/employees/619c2624b1687b05b54f0c8a
+
+###
+DELETE http://localhost:8080/v1/employees/619c26af9d3d092f0bc151d7
