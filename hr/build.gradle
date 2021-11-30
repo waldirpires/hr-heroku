@@ -22,18 +22,18 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb' // lab 3
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	
+
 	implementation 'javax.xml.bind:jaxb-api:2.1'
-	
+
 	// biblioteca de processamento de tokens JWT
 	implementation 'io.jsonwebtoken:jjwt:0.9.1'
-	
+
 	// u6: dependência para documentação
-	implementation "org.springdoc:springdoc-openapi-ui:1.4.1"	
+	implementation "org.springdoc:springdoc-openapi-ui:1.4.1"
 }
 
 test {
@@ -41,4 +41,13 @@ test {
 	testLogging {
 		events "PASSED"
 	}
+}
+
+jar {
+    manifest {
+        attributes(
+
+                'Main-Class': 'com.newton.aaw.hr.HumanResourcesApplication'
+        )
+    }
 }
